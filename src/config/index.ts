@@ -59,8 +59,8 @@ export const defaultConfig: Config = {
   api: "/api",
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
-  auth0Audience: "http://localhost:8080",
-  auth0Domain: "http://localhost:8080",
+  auth0Audience: "geo-forge.com",
+  auth0Domain: "geo-forge.com",
   auth0ClientId: "reearth-authsrv-client-default",
   policy: {
     modalTitle: {
