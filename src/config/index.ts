@@ -59,9 +59,9 @@ export const defaultConfig: Config = {
   api: "/api",
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
-  auth0Audience: "https://geo-forge.com/api",
+  auth0Audience: "https://dev-ygb0v2204tv1h402.us.auth0.com/api/v2",
   auth0Domain: "dev-ygb0v2204tv1h402.us.auth0.com",
-  auth0ClientId: "L6eZMuSX6NYmBbetmh4kWDg3vbC8vlFG",
+  auth0ClientId: "oy8Mqzq3GBLfJt7pfjk4ItEdIEYmSrkP",
   policy: {
     modalTitle: {
       en: "Re:Earth Cloud",
