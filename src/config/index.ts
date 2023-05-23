@@ -59,7 +59,7 @@ export const defaultConfig: Config = {
   api: "/api",
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
-  auth0Audience: "https://reearth-backend-65ycfye7t-dschiffer12.vercel.app:8080/",
+  auth0Audience: "https://20.127.235.50:8080/",
   auth0Domain: "dev-ygb0v2204tv1h402.us.auth0.com",
   auth0ClientId: "y8s5xvgKUbaQit1hAQPlx34104yKawqV",
   policy: {
