@@ -61,7 +61,7 @@ export const defaultConfig: Config = {
   published: window.origin + "/p/{}/",
   auth0Audience: "https://dev-ygb0v2204tv1h402.us.auth0.com/api/v2",
   auth0Domain: "dev-ygb0v2204tv1h402.us.auth0.com",
-  auth0ClientId: "oy8Mqzq3GBLfJt7pfjk4ItEdIEYmSrkP",
+  auth0ClientId: "fO32CMJgPE78wRYFrUnOMUrKpxrGlmeO",
   policy: {
     modalTitle: {
       en: "Re:Earth Cloud",
