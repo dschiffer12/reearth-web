@@ -61,7 +61,7 @@ export const defaultConfig: Config = {
   published: window.origin + "/p/{}/",
   auth0Audience: "http://localhost:8080",
   auth0Domain: "http://localhost:8080",
-  auth0ClientId: "reearth-authsrv-client-default"
+  auth0ClientId: "reearth-authsrv-client-default",
   policy: {
     modalTitle: {
       en: "Re:Earth Cloud",
