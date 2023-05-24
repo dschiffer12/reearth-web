@@ -59,9 +59,9 @@ export const defaultConfig: Config = {
   api: "/api",
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
-  auth0Audience: "http://localhost:8080/",
-  auth0Domain: "dev-ygb0v2204tv1h402.us.auth0.com",
-  auth0ClientId: "y8s5xvgKUbaQit1hAQPlx34104yKawqV",
+  auth0Audience: "http://localhost:8080",
+  auth0Domain: "http://localhost:8080",
+  auth0ClientId: "reearth-authsrv-client-default",
   policy: {
     modalTitle: {
       en: "Re:Earth Cloud",
