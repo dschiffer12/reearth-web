@@ -59,7 +59,7 @@ export const defaultConfig: Config = {
   api: "/api",
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
-  auth0Audience: "http://localhost:8080",
+  auth0Audience: "https://reearth-backend-production-d368.up.railway.app/",
   auth0Domain: "http://localhost:8080",
   auth0ClientId: "reearth-authsrv-client-default",
   policy: {
