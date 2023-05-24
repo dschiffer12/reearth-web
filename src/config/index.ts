@@ -60,7 +60,7 @@ export const defaultConfig: Config = {
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
   auth0Audience: "https://us-east-1.aws.data.mongodb-api.com/app/application-0-gqopj/endpoint/data/v1",
-  auth0Domain: "http://localhost:8080",
+  auth0Domain: "https://us-east-1.aws.data.mongodb-api.com/app/application-0-gqopj/endpoint/data/v1",
   auth0ClientId: "reearth-authsrv-client-default",
   policy: {
     modalTitle: {
