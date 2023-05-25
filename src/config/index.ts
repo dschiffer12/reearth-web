@@ -59,9 +59,9 @@ export const defaultConfig: Config = {
   api: "/api",
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
-  auth0Audience: "https://us-east-1.aws.data.mongodb-api.com/app/application-0-gqopj/endpoint/data/v1",
-  auth0Domain: "https://us-east-1.aws.data.mongodb-api.com/app/application-0-gqopj/endpoint/data/v1",
-  auth0ClientId: "reearth-authsrv-client-default",
+  auth0Audience: "https://us-west-2.aws.data.mongodb-api.com/app/data-omlni/endpoint/data/v1",
+  auth0Domain: "mongodb+srv://dschiffer12:Goose1212@geoforge-serverless.hbcn0se.mongodb.net/?retryWrites=true&w=majority",
+  auth0ClientId: "fO32CMJgPE78wRYFrUnOMUrKpxrGlmeO",
   policy: {
     modalTitle: {
       en: "Re:Earth Cloud",
