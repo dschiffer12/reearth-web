@@ -122,7 +122,7 @@ export function convertPasswordPolicy(passwordPolicy?: {
   );
 }
 
- IIFE
+// IIFE
  function importExternal(url: string) {
    return new Promise((res, rej) => {
      const script = document.createElement("script");
