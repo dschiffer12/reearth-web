@@ -60,7 +60,7 @@ export const defaultConfig: Config = {
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
   auth0Audience: "https://us-west-2.aws.data.mongodb-api.com/app/data-omlni/endpoint/data/v1",
-  auth0Domain: "mongodb+srv://dschiffer12:Goose1212@geoforge-serverless.hbcn0se.mongodb.net/?retryWrites=true&w=majority",
+  auth0Domain: "dev-ygb0v2204tv1h402.us.auth0.com",
   auth0ClientId: "fO32CMJgPE78wRYFrUnOMUrKpxrGlmeO",
   policy: {
     modalTitle: {
