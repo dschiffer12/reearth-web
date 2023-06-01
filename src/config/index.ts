@@ -122,21 +122,21 @@ export function convertPasswordPolicy(passwordPolicy?: {
   );
 }
 
-// IIFE
-// function importExternal(url: string) {
-//   return new Promise((res, rej) => {
-//     const script = document.createElement("script");
-//     script.src = url;
-//     script.async = true;
-//     script.onload = () => {
-//       if (!window.REEARTH_CONFIG) return;
-//       res(window.REEARTH_CONFIG.extensions);
-//     };
-//     script.onerror = rej;
+ IIFE
+ function importExternal(url: string) {
+   return new Promise((res, rej) => {
+     const script = document.createElement("script");
+     script.src = url;
+     script.async = true;
+     script.onload = () => {
+       if (!window.REEARTH_CONFIG) return;
+       res(window.REEARTH_CONFIG.extensions);
+     };
+     script.onerror = rej;
 
-//     document.body.appendChild(script);
-//   });
-// }
+     document.body.appendChild(script);
+   });
+ }
 
 export default async function loadConfig() {
   if (window.REEARTH_CONFIG) return;
