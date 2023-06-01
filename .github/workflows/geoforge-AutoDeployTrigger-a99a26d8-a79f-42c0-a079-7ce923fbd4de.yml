@@ -1,0 +1,42 @@
+name: Trigger auto deployment for geoforge
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ main ]
+    paths:
+    - '**'
+    - '.github/workflows/geoforge-AutoDeployTrigger-a99a26d8-a79f-42c0-a079-7ce923fbd4de.yml'
+
+  # Allow mannually trigger 
+  workflow_dispatch:
+      
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.GEOFORGE_AZURE_CREDENTIALS }}
+
+      - name: Build and push container image to registry
+        uses: azure/container-apps-deploy-action@v1
+        with:
+          appSourcePath: ${{ github.workspace }} 
+          registryUrl: docker.io
+          registryUsername: ${{ secrets.GEOFORGE_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.GEOFORGE_REGISTRY_PASSWORD }}
+          containerAppName: geoforge
+          resourceGroup: DefaultResourceGroup-WUS2
+          imageToBuild: dschiffer12/geoforge:${{ github.sha }}
+          
+
+     
+
