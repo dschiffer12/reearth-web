@@ -59,7 +59,7 @@ export const defaultConfig: Config = {
   api: "/api",
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
-  auth0Audience: "https://us-west-2.aws.data.mongodb-api.com/app/data-omlni/endpoint/data/v1",
+  auth0Audience: "https://dev-ygb0v2204tv1h402.us.auth0.com/api/v2/",
   auth0Domain: "dev-ygb0v2204tv1h402.us.auth0.com",
   auth0ClientId: "fO32CMJgPE78wRYFrUnOMUrKpxrGlmeO",
   policy: {
