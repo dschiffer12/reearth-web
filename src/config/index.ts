@@ -59,9 +59,9 @@ export const defaultConfig: Config = {
   api: "/api",
   plugins: "/plugins",
   published: window.origin + "/p/{}/",
-  auth0Audience: "https://dev-ygb0v2204tv1h402.us.auth0.com/api/v2/",
-  auth0Domain: "dev-ygb0v2204tv1h402.us.auth0.com",
-  auth0ClientId: "y8s5xvgKUbaQit1hAQPlx34104yKawqV",
+  auth0Audience: "http://localhost:8080",
+  auth0Domain: "http://localhost:8080",
+  auth0ClientId: "reearth-authsrv-client-default",
   policy: {
     modalTitle: {
       en: "Re:Earth Cloud",
@@ -123,20 +123,20 @@ export function convertPasswordPolicy(passwordPolicy?: {
 }
 
 // IIFE
- function importExternal(url: string) {
-   return new Promise((res, rej) => {
-     const script = document.createElement("script");
-     script.src = url;
-     script.async = true;
-     script.onload = () => {
-       if (!window.REEARTH_CONFIG) return;
-       res(window.REEARTH_CONFIG.extensions);
-     };
-     script.onerror = rej;
+// function importExternal(url: string) {
+//   return new Promise((res, rej) => {
+//     const script = document.createElement("script");
+//     script.src = url;
+//     script.async = true;
+//     script.onload = () => {
+//       if (!window.REEARTH_CONFIG) return;
+//       res(window.REEARTH_CONFIG.extensions);
+//     };
+//     script.onerror = rej;
 
-     document.body.appendChild(script);
-   });
- }
+//     document.body.appendChild(script);
+//   });
+// }
 
 export default async function loadConfig() {
   if (window.REEARTH_CONFIG) return;
